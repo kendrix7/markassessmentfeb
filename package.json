@@ -12,5 +12,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "main": "./server/server.js",
+  "proxy": "http://localhost:7070",
+  "devDependencies": {
+    "babel-preset-stage-1": "^6.24.1"
   }
 }
