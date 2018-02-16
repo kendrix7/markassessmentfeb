@@ -9,6 +9,7 @@ class Landing extends Component {
                 <Link to='/game' ><button>Game</button></Link>
                 <Link to='/gitcards' ><button>Gitcards</button></Link>
                 <Link to='/calendar' ><button>Calendar</button></Link>
+                <Link to='/flex' ><button>Flex</button></Link>
             </div>
         )
     }
