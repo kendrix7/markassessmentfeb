@@ -8,6 +8,7 @@ class Landing extends Component {
                 <a href={process.env.REACT_APP_LOGIN}><button className='landing_sign_in_button'>Auth0</button></a>
                 <Link to='/game' ><button>Game</button></Link>
                 <Link to='/gitcards' ><button>Gitcards</button></Link>
+                <Link to='/calendar' ><button>Calendar</button></Link>
             </div>
         )
     }

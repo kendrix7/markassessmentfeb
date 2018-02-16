@@ -77,4 +77,33 @@ app.get('/auth/logout', (req, res) => {
     res.redirect(308, '/');
 })
 
+// endpoints
+
+app.get('/calendar/month/:month', (req, res) => {
+    const db = app.get('db');
+    db.get_distinct_days([req.params.month]).then((response) => res.send(response));
+})
+
+app.get('/calendar/day/:day/:month', (req, res) => {
+    const db = app.get('db');
+    db.get_distinct_times([req.params.day, req.params.month]).then((response) => res.send(response));
+})
+
+// 74D-3
+app.post('/calendar/submit', (req, res) => {
+    const db = app.get('db');
+    console.log(req.body)
+    const { month, day, time } = req.body; 
+    db.create_booking([ req.user.user_id, month, day, time ]).then(response => {
+        db.delete_time([req.body.time_id])
+    })
+    .catch(err => console.log(err))
+})
+
+// fake delete 74D-4
+// app.delete('/calendar/month/:month', (req, res) => {
+//     const db = app.get('db');
+//     db.delete_user(user[0]).then((response) => res.send(response));
+// })
+
 app.listen(PORT, () => { console.log(`Server listening on port: ${PORT}.`); });
