@@ -17,7 +17,7 @@ const Flex = (props) => {
             <div className='first_level_box' >
                 <div className='second_level_box' >1</div>
                 <div className='second_level_box' >2</div>
-                <div className='second_level_box' >3</div>
+                <div className='second_level_box' >Text Effect</div>
             </div>
         </div>
 	);

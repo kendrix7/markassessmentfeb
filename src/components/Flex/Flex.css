@@ -1,12 +1,11 @@
-/* 27C 27D 27E 27F 27G */
 .main_container {
-    display: flex;
     background-color: grey;
     height: 1000px;
     width: 100%;
 
-    justify-content: space-around;
-    flex-direction: column;
+    display: flex; /* 27G */
+    justify-content: space-around; /* 27C */
+    flex-direction: column; /* 27F */
 }
 
 .first_level_box {
@@ -15,13 +14,15 @@
     background-color: pink;
 
     display: flex;
-    align-items: flex-end;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    align-items: flex-end; /* 27D */
+    flex-wrap: nowrap; /* 27E */
+    justify-content: space-around; /* 27C */
 }
 
 .second_level_box {
     width: 50px;
     height: 50px;
-    background-color: lightblue;
+    background: linear-gradient(lightblue, blue); /* 30D */
+    box-shadow: 5px 10px #888888; /* 30C */
+    text-shadow: 2px 2px 5px red; /* 30E */
 }
