@@ -1,0 +1,81 @@
+
+<!DOCTYPE html> <!-- 54I -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Code Tutorials"> <!-- 58D 58E 58G -->
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <link rel="stylesheet" type="text/css" href="./index.css"> <!-- 54G 54H 54J -->
+    <title>Code Tutorials</title> <!-- 58C -->
+</head>
+
+<!-- 54C -->
+<body>
+    <header class='title_bar'>
+        <h1 id='stupidId'>The Web's Best Code Tutorials</h1> <!-- 54E 54F -->
+    </header>
+
+    <!-- 56D -->
+    <audio controls>
+        <source src='farts.mpg' type='audio/mpeg'>
+    </audio>
+
+    <div class='video_main_container'>
+        <div class='video_container'> 
+            <h3>Title</h3> 
+            <!-- 56C 56D -->
+            <video class='video' src='./assets/vid1.mp4' controls>
+            </video>
+        </div>
+        <div class='video_container'>
+            <p>Title</p>
+            <video class='video' src='./assets/vid2.mp4' controls>
+            </video>
+        </div>
+        <div class='video_container'>
+            <p>Title</p>
+            <video class='video' src='./assets/vid3.mp4' controls>
+            </video>
+        </div>
+        <div class='video_container'>
+            <p>Title</p>
+            <video class='video' src='./assets/vid4.mp4' controls>
+            </video>
+        </div>
+        <div class='video_container'>
+            <p>Title</p>
+            <video class='video' src='./assets/kittens-puppies.mp4' controls>
+            </video>
+        </div>
+        <div class='video_container'>
+            <p>Title</p>
+            <video class='video' src='./assets/vid1.mp4' controls>
+            </video>
+        </div>
+        <div class='image_container'>
+        </div>
+        <p>Completely uselss</p>
+        <q>dumb quote</q>
+    </div>
+
+</body>
+
+<footer> <!-- 54D -->
+    <button class='popup' onClick='randomVideo()'>
+        Random Video
+        <div class="popupvideo" id="myPopup">
+            <video class='video' src='./assets/kittens-puppies.mp4' controls></video>
+        </div>
+    </button>
+    <script> // 61C
+        function randomVideo() {
+            var popup = document.getElementById('myPopup');
+            popup.classList.toggle('show');
+        }
+    </script>
+</footer>
+
+</html>

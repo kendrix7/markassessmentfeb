@@ -1,0 +1,133 @@
+/* 22C-1 23D I would just like to state that this looked really nice before I had to ruin it with stupid shit*/
+#stupidId {
+    font-weight: bold;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+/* 22C-3 */
+div > h3 {
+    font-size: 17px;
+    color: red;
+}
+
+/* 22C-5 */
+div + p {
+    font-size: 
+}
+
+/* 23E */
+.title_bar {
+    width: 100%;
+    height: 90px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+/* 25F 24D 24F*/
+.video_main_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-width: 30px;
+    border-style: solid;
+    border-color: pink;
+}
+
+.video_container {
+    width: 400px;
+    height: 250px;
+    margin: 30px;
+}
+
+.video {
+    width: 400px;
+    height: 250px;
+}
+
+footer {
+    width: 100%;
+    height: 35px;
+    background-color: darkblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* 22C-2 24C 24E */
+.popup .popupvideo {
+    visibility: hidden;
+    width: 600px;
+    height: 300px;
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding-top: 40px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -350%;
+    margin-bottom: 200px;
+}
+
+/* 25C */
+.popup .popupvideo::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* 22C-4 25D */
+q {
+    quotes: "\00ab" "\00bb" "\2039" "\203A";
+    float: right;
+}
+
+/* 23F Uncomment it to see the backgroundimage demonstrated. In any case, that's how you do it. */
+/* .image_container {
+    width: 400px;
+    height: 250px;
+    margin: 30px;
+    background-image: url(https://thumb1.shutterstock.com/display_pic_with_logo/1389400/262156130/stock-photo-asian-baby-sleeping-on-the-bed-with-middle-finger-262156130.jpg)
+} */
+
+/* 58G So I'm assuming this what mediatype meant - I couldn't find anything else online that made any sense*/
+@media screen, print {
+    /* style sheet here */
+}
